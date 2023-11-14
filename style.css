@@ -1,0 +1,23 @@
+/* 
+Seletor do 'body' do html 
+backgroud = propriedade
+url = função
+*/
+body {
+  /*
+   Por padrão, esta propriedade repete as imagens 
+  background-image: url(./assets/bg-mobile.jpg);
+   Então com a propriedade abaixo t iremos esta repetição 
+  background-repeat: no-repeat;
+   Com a linha abaixo centralizamos a imagem no topo e centro 
+  background-position: center;
+  E com a linha abaixo, fazemos com que a imagem preencha toda a tela 
+  background-size: cover;
+  */
+
+  /* Abaixo, agrupamos todas as linhas acima. Ordem:
+    background: color image repeat position/size 
+    Nome dessa técnica: shorthand ou atalho
+  */
+  background: url(./assets/bg-desktop.jpg) no-repeat top center/cover;
+}

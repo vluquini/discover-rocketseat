@@ -1,0 +1,76 @@
+{
+  // editor
+  "editor.wordWrap": "on",
+  "editor.fontSize": 15,
+  "editor.lineHeight": 30,
+  "editor.tabSize": 2,
+  "editor.bracketPairColorization.enabled": true,
+  "editor.guides.bracketPairs": true,
+  "editor.minimap.enabled": false,
+  "editor.formatOnSave": true,
+  "editor.formatOnPaste": true,
+  "files.autoSave": "afterDelay",
+
+  // explorer
+  "explorer.compactFolders": false,
+
+  // workbench
+  "workbench.editor.enablePreview": false,
+  "workbench.iconTheme": "material-icon-theme",
+  "workbench.colorTheme": "Omni",
+
+  // prettier
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "prettier.enable": true,
+  "prettier.singleQuote": false,
+  "prettier.tabWidth": 2,
+  "prettier.semi": false,
+
+  // terminal
+  "terminal.integrated.fontSize": 16,
+  "terminal.integrated.profiles.windows": {
+    "Git Bash": {
+      "source": "Git Bash"
+    }
+  },
+  "terminal.integrated.defaultProfile.windows": "Git Bash"
+
+  /*
+
+Abaixo, descrição do que cada uma destas linhas fazem:
+
+Editor Settings:
+
+editor.wordWrap: Define como o editor lida com quebras de linha. "on" significa que o texto será quebrado visualmente, mas não haverá quebra real nas linhas do código.
+editor.fontSize: Tamanho da fonte no editor.
+editor.lineHeight: Altura da linha no editor.
+editor.tabSize: Número de espaços por tabulação.
+editor.bracketPairColorization.enabled: Ativa a colorização de pares de colchetes.
+editor.guides.bracketPairs: Exibe guias ao redor dos pares de colchetes.
+editor.minimap.enabled: Ativa ou desativa o minimapa no canto direito do editor.
+editor.formatOnSave: Formata automaticamente o código ao salvar o arquivo.
+editor.formatOnPaste: Formata automaticamente o código ao colar.
+files.autoSave: Configura a opção de salvamento automático, neste caso, após um atraso.
+
+Explorer Settings:
+explorer.compactFolders: Define se as pastas no explorador são compactadas.
+Workbench Settings:
+
+workbench.editor.enablePreview: Desativa a visualização prévia de abas.
+workbench.iconTheme: Define o tema de ícones para o ambiente de trabalho.
+workbench.colorTheme: Define o tema de cores para o ambiente de trabalho.
+
+Prettier Settings:
+editor.defaultFormatter: Define o formatador padrão para o código. Neste caso, usa o Prettier.
+prettier.enable: Ativa o uso do Prettier.
+prettier.singleQuote: Define se as aspas simples ou duplas devem ser usadas para strings.
+prettier.tabWidth: Número de espaços por tabulação no Prettier.
+prettier.semi: Define se deve haver ponto e vírgula no final de declarações.
+Terminal Settings:
+
+terminal.integrated.fontSize: Tamanho da fonte no terminal integrado.
+terminal.integrated.profiles.windows: Configuração de perfis do terminal para o ambiente Windows (Git Bash neste caso).
+terminal.integrated.defaultProfile.windows: Define o perfil padrão do terminal para o ambiente Windows.
+
+*/
+}
