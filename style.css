@@ -21,3 +21,30 @@ body {
   */
   background: url(./assets/bg-desktop.jpg) no-repeat top center/cover;
 }
+
+#container{
+  width: 360px;
+  border: 1px solid red;
+  /* A propriedade 'margin' consegue alinhas aos lados e abaixo, mas não em cima... */
+  margin: auto;
+}
+/* Uma outra maneira de alinhar a imagem, é alinhando o conteúdo
+contido na div 'pai', que é a div profile. Assim, alinho todo o conteúdo
+contido nesta div. */
+#profile{
+  text-align: center;
+}
+/* id da div "profile" e a propriedade "img" dentro dela */
+#profile img{
+  /*display: block; /*
+  /* Geralmente no CSS definimos apelas a largura e não a altura (width, height),
+  pois a altura geralmente segue o conteúdo da página. */
+  width: 112px;
+  /* Como a 'div' é, por padrão, displai = inline, então para centralizar
+  a imagem é necessário usar, acima, o display = blocl. */
+  /*margin: auto; */
+  
+}
+
+
+
