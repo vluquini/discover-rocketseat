@@ -1,3 +1,9 @@
+/* Removendo as medidas padrão do navegador */
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
 /* 
 Seletor do 'body' do html 
 backgroud = propriedade
@@ -21,18 +27,30 @@ body {
   */
   background: url(./assets/bg-desktop.jpg) no-repeat top center/cover;
 }
-
+/* * = seletor universal */
+body * {
+  font-family: 'Inter', sans-serif;
+  color: white;
+}
 #container{
   width: 360px;
-  border: 1px solid red;
-  /* A propriedade 'margin' consegue alinhas aos lados e abaixo, mas não em cima... */
-  margin: auto;
+  /* A propriedade 'margin' consegue alinhar aos lados e abaixo, mas não em cima... */
+  /* O 'margin' contém dentro dele todos os lados abaixo, na ordem de um relógio.
+  margin-top: 56px;
+  margin-right: auto;
+  margin-bottom: auto;
+  margin-left: auto;
+
+  O atributo 'margin' possui alguns tricks, como abaixo: 
+  Aqui, é feito 56px no top, auto nas laterais e 0px no bottom. */
+  margin: 56px auto 0px;
 }
 /* Uma outra maneira de alinhar a imagem, é alinhando o conteúdo
 contido na div 'pai', que é a div profile. Assim, alinho todo o conteúdo
 contido nesta div. */
 #profile{
   text-align: center;
+  padding: 24px;
 }
 /* id da div "profile" e a propriedade "img" dentro dela */
 #profile img{
@@ -40,10 +58,17 @@ contido nesta div. */
   /* Geralmente no CSS definimos apelas a largura e não a altura (width, height),
   pois a altura geralmente segue o conteúdo da página. */
   width: 112px;
-  /* Como a 'div' é, por padrão, displai = inline, então para centralizar
-  a imagem é necessário usar, acima, o display = blocl. */
+  /* Como a 'div' é, por padrão, display = inline, então para centralizar
+  a imagem é necessário usar, acima, o display = block. */
   /*margin: auto; */
-  
+}
+
+#profile p{
+  font-weight: 600;
+  /* Por padrão, os navegadores já possuem font-size de 16px, ent n é cessário por
+  font-size: 16px; */
+  line-height: 24px;
+  margin-top: 8px;
 }
 
 
