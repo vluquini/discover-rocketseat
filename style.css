@@ -70,6 +70,16 @@ contido nesta div. */
   line-height: 24px;
   margin-top: 8px;
 }
+/* Imagem de perfil */
+#profile img {
+  width: 216px;
+  height: 213px; /* Adicionando altura igual à largura para garantir um círculo */
+  border-radius: 50%; /* Define a borda para criar um círculo */
+  display: block;
+  margin: auto;
+}
+
+
 
 
 
