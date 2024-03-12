@@ -91,4 +91,17 @@ ul li a {
   border-radius: 10px;
   /* blur levemente adicionado ao botão */
   backdrop-filter: blur(4px);
+  /* removendo a linha abaixo dos textos dos links */
+  text-decoration: none;
+  /* aumentando um pouco o 'tamanho' da fonte */
+  font-weight: 500; /* ou bold */
+  /* transição para 'movimentação' entre os botões na página */
+  transition: background 0.5s;
+}
+/* pseudo-selector */
+ul li a:hover {
+  /* efeito no botão */
+  background: rgba(255, 255, 255, 0.05);
+  /* efeito nas bordas do botão */
+  border: 1px solid aqua;
 }
