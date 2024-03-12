@@ -72,13 +72,23 @@ contido nesta div. */
 /* Removendo o 'botaozinho' de lista */
 ul {
   list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
 }
 
 ul li a {
-  border: 1px solid red;
   display: flex;
   align-items: center;
   justify-content: center;
   /*height: 52px;*/
   padding: 16px 24px;
+  /* cor dos botões */
+  background: rgba(255, 255, 255, 0.1);
+  /* cor das pontas dos botões */
+  border: 1px solid rgba(255, 255, 255, 0.7);
+  /* borda dos botões */
+  border-radius: 10px;
+  /* blur levemente adicionado ao botão */
+  backdrop-filter: blur(4px);
 }
