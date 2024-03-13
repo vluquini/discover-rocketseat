@@ -44,6 +44,7 @@ body * {
   O atributo 'margin' possui alguns tricks, como abaixo: 
   Aqui, é feito 56px no top, auto nas laterais e 0px no bottom. */
   margin: 56px auto 0px;
+  padding: 0 24px;
 }
 /* Uma outra maneira de alinhar a imagem, é alinhando o conteúdo
 contido na div 'pai', que é a div profile. Assim, alinho todo o conteúdo
@@ -75,6 +76,7 @@ ul {
   display: flex;
   flex-direction: column;
   gap: 16px;
+  padding: 24px 0;
 }
 
 ul li a {
@@ -104,4 +106,16 @@ ul li a:hover {
   background: rgba(255, 255, 255, 0.05);
   /* efeito nas bordas do botão */
   border: 1px solid aqua;
+}
+
+#social-links {
+  /* alinhando ao meio */
+  display: flex;
+  justify-content: center;
+  /* configurando a distância entre os ícones */
+  gap: 32px;
+  /* posição */
+  padding: 24px 0;
+  /* tamanho dos ícones */
+  font-size: 24px;
 }
