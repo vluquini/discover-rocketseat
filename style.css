@@ -112,10 +112,21 @@ ul li a:hover {
   /* alinhando ao meio */
   display: flex;
   justify-content: center;
-  /* configurando a distância entre os ícones */
-  gap: 32px;
   /* posição */
   padding: 24px 0;
   /* tamanho dos ícones */
   font-size: 24px;
+}
+/* alinhando o icone */
+#social-links a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 16px;
+  transition: background 0.2s;
+  border-radius: 50%;
+}
+
+#social-links a:hover {
+  background: rgba(255, 255, 255, 0.2);
 }
