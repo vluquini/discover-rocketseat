@@ -9,11 +9,19 @@
   /* definindo uma variável para a página */
   --text-color: white;
   --bg-url: url(./assets/bg-desktop.jpg);
+  --stroke-color: rgba(255, 255, 255, 0.5);
+  --surface-color: rgba(255, 255, 255, 0.1);
+  --surface-color-hover: rgba(255, 255, 255, 0.05);
+  --highlight-color: rgba(255, 255, 255, 0.2);
 }
 
 .light {
   --text-color: black;
   --bg-url: url(./assets/bg-desktop-light.jpg);
+  --stroke-color: rgba(0, 0, 0, 0.5);
+  --surface-color: rgba(0, 0, 0, 0.05);
+  --surface-color-hover: rgba(0, 0, 0, 0.2);
+  --highlight-color: rgba(0, 0, 0, 0.1);
 }
 /* 
 Seletor do 'body' do html 
@@ -97,9 +105,9 @@ ul li a {
   /*height: 52px;*/
   padding: 16px 24px;
   /* cor dos botões */
-  background: rgba(255, 255, 255, 0.1);
+  background: var(--surface-color);
   /* cor das pontas dos botões */
-  border: 1px solid rgba(255, 255, 255, 0.7);
+  border: 1px solid var(--stroke-color);
   /* borda dos botões */
   border-radius: 10px;
   /* blur levemente adicionado ao botão */
@@ -114,7 +122,7 @@ ul li a {
 /* pseudo-selector */
 ul li a:hover {
   /* efeito no botão */
-  background: rgba(255, 255, 255, 0.05);
+  background: var(--surface-color-hover);
   /* efeito nas bordas do botão */
   border: 1.5px solid var(--text-color);
 }
@@ -139,7 +147,7 @@ ul li a:hover {
 }
 
 #social-links a:hover {
-  background: rgba(255, 255, 255, 0.2);
+  background: var(--highlight-color);
 }
 
 footer {
