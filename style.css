@@ -4,6 +4,17 @@
   padding: 0px;
   box-sizing: border-box;
 }
+
+:root {
+  /* definindo uma variável para a página */
+  --text-color: white;
+  --bg-url: url(./assets/bg-desktop.jpg);
+}
+
+.light {
+  --text-color: black;
+  --bg-url: url(./assets/bg-desktop-light.jpg);
+}
 /* 
 Seletor do 'body' do html 
 backgroud = propriedade
@@ -25,12 +36,12 @@ body {
     background: color image repeat position/size 
     Nome dessa técnica: shorthand ou atalho
   */
-  background: url(./assets/bg-desktop.jpg) no-repeat top center/cover;
+  background: var(--bg-url) no-repeat top center/cover;
 }
 /* * = seletor universal */
 body * {
   font-family: "Inter", sans-serif;
-  color: white;
+  color: var(--text-color);
 }
 #container {
   width: 360px;
@@ -105,7 +116,7 @@ ul li a:hover {
   /* efeito no botão */
   background: rgba(255, 255, 255, 0.05);
   /* efeito nas bordas do botão */
-  border: 1px solid aqua;
+  border: 1.5px solid var(--text-color);
 }
 
 #social-links {
