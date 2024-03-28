@@ -109,10 +109,15 @@ contido nesta div. */
   /* para 'sobrepor' o span com o botão */
   position: absolute;
   top: 50%;
+  left: 0;
   transform: translateY(-50%);
   z-index: 1;
 }
 
+.light #switch button {
+  right: 0;
+  left: initial;
+}
 #switch span {
   /* por padrão, o span possui um display-inline */
   display: block;
