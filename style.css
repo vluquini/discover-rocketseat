@@ -99,11 +99,17 @@ contido nesta div. */
   left: 0;
   transform: translateY(-50%);
   z-index: 1;
+  /* animação do botão para voltar */
+  animation: slide-back 0.5s;
+}
+
+#switch button:hover {
+  outline: 8px solid var(--highlight-color);
 }
 
 .light #switch button {
-  right: 0;
-  left: initial;
+  /* formards --> após fazer a animação, mantém as propriedades do slide-in */
+  animation: slide-in 0.5s forwards;
 }
 #switch span {
   /* por padrão, o span possui um display-inline */
@@ -188,5 +194,23 @@ footer {
   }
   .light {
     --bg-url: url(./assets/bg-desktop-light.jpg);
+  }
+}
+/* animação do botão */
+@keyframes slide-in {
+  from {
+    left: 0;
+  }
+  to {
+    left: 50%;
+  }
+}
+
+@keyframes slide-back {
+  from {
+    left: 50%;
+  }
+  to {
+    left: 0;
   }
 }
